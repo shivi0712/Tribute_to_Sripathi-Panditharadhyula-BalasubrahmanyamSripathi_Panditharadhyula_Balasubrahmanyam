@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: #1b1b1b;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+
+nav .logo {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #111;
+    background: #fff;
+}
+
+nav .menu-btn i {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    nav {
+        padding: 0 40px 0 50px;
+    }
+}
+
+@media (max-width: 920px) {
+    nav .menu-btn i {
+        display: block;
+    }
+    #click:checked~.menu-btn i:before {
+        content: "\f00d";
+    }
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    #click:checked~ul {
+        left: 0;
+    }
+    nav ul li {
+        width: 100%;
+        margin: 40px 0;
+    }
+    nav ul li a {
+        width: 100%;
+        margin-left: -100%;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    #click:checked~ul li a {
+        margin-left: 0px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover {
+        background: none;
+        color: cyan;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #444;
+    padding: 30px 0;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #444;
+    padding: 30px 0;
+}
+
+main {
+    width: 90%;
+    height: 2500px;
+    border: 1px solid black;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div {
+    width: 30%;
+    height: 160px;
+    /*border: 1px solid red;*/
+    box-shadow: 2px 2px 5px grey;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.a {
+    background-image: url('https://i.ytimg.com/vi/Ha1BQP3ACoc/maxresdefault.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.text {
+    display: flex;
+    height: 30px;
+    box-sizing: content-box;
+    border-radius: 10px;
+    border: 2px solid black;
+    text-align: center;
+    padding-left: 10%;
+    box-shadow: 2px 2px 5px grey;
+    padding-top: 40%;
+}
+
+.b {
+    background-image: url('https://sptnaecdnems11.cdnsrv.jio.com/c.saavncdn.com/173/Sarada-Chelleli-Kaapuram-Manavudu-Daanavudu-2005-500x500.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.c {
+    background-image: url('https://i.ytimg.com/vi/47BW2jVoO3s/maxresdefault.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.d {
+    background-image: url('https://i.ytimg.com/vi/xogZHMi5xKU/hqdefault.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.e {
+    background-image: url('https://i.ytimg.com/vi/vaLtLiiQu5g/maxresdefault.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.f {
+    background-image: url('https://i.ytimg.com/vi/sbMDzPAAyBM/maxresdefault.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.g {
+    background-image: url('https://i1.wp.com/godofindia.com/wp-content/uploads/2017/05/sai-baba-2.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.h {
+    background-image: url('https://i.ytimg.com/vi/xCo1qgC8-nA/maxresdefault.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.i {
+    background-image: url('https://3.bp.blogspot.com/-t5OBAdtfCk8/W3mBiAe4IqI/AAAAAAAABAI/NqUKDVRB1hcL1Vj0IqCsEnWZldYauTPbQCLcBGAs/w1200-h630-p-k-no-nu/Krushi%2BVunte%2BManushulu%2BRushulautaru%2BLyrics.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.j {
+    background-image: url('https://i.ytimg.com/vi/fjl5XLIfwjY/maxresdefault.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.k {
+    background-image: url('https://i.ytimg.com/vi/dHL7IJm2ZVM/maxresdefault.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.l {
+    background-image: url('https://naasongs.com.co/wp-content/uploads/2019/01/Sagara-Sangamam-1983jpeg.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.m {
+    background-image: url('https://i.ytimg.com/vi/bYxsAyBHHAw/maxresdefault.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.n {
+    background-image: url('https://im.rediff.com/movies/2020/sep/28sp-song15.jpg?w=670&h=900');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.o {
+    background-image: url('https://im.rediff.com/movies/2020/sep/28sp-song13.jpg?w=670&h=900');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.p {
+    background-image: url('https://i.ytimg.com/vi/m60fmXJPEjI/maxresdefault.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.q {
+    background-image: url('https://lyricsing.com/wp-content/uploads/Abhinava-Thaaravo.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.r {
+    background-image: url('https://i.ytimg.com/vi/OTZ_roLFw0Y/hqdefault.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.s {
+    background-image: url('https://i.ytimg.com/vi/8OOheloGwJM/maxresdefault.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.t {
+    background-image: url('https://i.ytimg.com/vi/brYiywqUVi4/maxresdefault.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.u {
+    background-image: url('https://i.ytimg.com/vi/uYzEdfhfKMg/maxresdefault.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.v {
+    background-image: url('https://2.bp.blogspot.com/-X_xPc0ZTdgw/VsRX2CtjdKI/AAAAAAAABog/0HS2DMiXWy8/s1600/Sita%2BRamulu.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.w {
+    background-image: url('http://i1.ytimg.com/vi/TjAKRd7uNRs/maxresdefault.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.x {
+    background-image: url('https://media-images.mio.to/various_artists/K/Kurisindi%20Vaana%20-%20Naa%20Gundelona%20-%20Rain%20Songs%20(2014)/Art-350.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.y {
+    background-image: url('https://sptnaecdnems06.cdnsrv.jio.com/c.saavncdn.com/973/Maavi-Chiguru-Telugu-1996-20200620155016-500x500.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: #1b1b1b;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+
+nav .logo {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #111;
+    background: #fff;
+}
+
+nav .menu-btn i {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    nav {
+        padding: 0 40px 0 50px;
+    }
+}
+
+@media (max-width: 920px) {
+    nav .menu-btn i {
+        display: block;
+    }
+    #click:checked~.menu-btn i:before {
+        content: "\f00d";
+    }
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    #click:checked~ul {
+        left: 0;
+    }
+    nav ul li {
+        width: 100%;
+        margin: 40px 0;
+    }
+    nav ul li a {
+        width: 100%;
+        margin-left: -100%;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    #click:checked~ul li a {
+        margin-left: 0px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover {
+        background: none;
+        color: cyan;
+    }
+}
